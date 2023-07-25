@@ -1,11 +1,114 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assigment_3</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font family lato -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:wght@700&display=swap" rel="stylesheet">
+     <!-- font awesome -->
+     <script src="https://kit.fontawesome.com/1c84c20e74.js" crossorigin="anonymous"></script>
+    
+    <!-- css style side -->
+     <style>
+     .font_family{
+    font-family: 'Lato', sans-serif;
+     }
+    </style>
 </head>
-<body>
-    <h1>check</h1>
+<body class="font_family"> 
+    <header class="container mx-auto md:px-16 px-8">
+        <nav class="mb-2">
+            <div class="navbar bg-[#F85559] p-4 rounded-r-full rounded-l-full my-10">
+                <div class="navbar-start">
+                    <div class="flex list-none gap-10 text-white text-sm ml-10">
+                        <li>Home</li>
+                        <li>About Us</li>
+                        <li>Shop</li>
+                        <li>All Fruits</li>
+                    </div>
+                  <div class="dropdown md:hidden">
+                    <label tabindex="0" class="btn btn-ghost btn-circle">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
+                    </label>
+                   
+                  </div>
+                </div>
+                
+                <div class="navbar-center flex justify-start mr-10">
+                    <img src="images/logo.png" alt="">
+                  <a class="btn btn-ghost normal-case text-xl text-white">Fruit Burst</a>
+                </div>
+                 <div class="navbar-end flex justify-evenly border-2 rounded-r-2xl rounded-l-2xl w-96 h-10 bg-white text-gray-400">
+                   <p class="text-xs">search here</p>
+                   <i class="fa-solid fa-magnifying-glass"></i>
+                 </div>
+                
+                  
+                </div>
+            
+        </nav>
+        <div class="container mx-auto">
+            <div class="hero min-h-[calc(100vh - 100px)] rounded-2xl" style="background-image: url(images/banner4.png);">
+                <div class="hero-overlay bg-opacity-50"></div>
+                <div class="hero-content text-center text-neutral-content p-16">
+                  <div class="max-w-md">
+                    <h1 class="mb-5 text-5xl font-extrabold text-white">Exotic tastes at your doorstep</h1>
+                    <p class="mb-5 text-sm">We supply highly quality organic products</p>
+                    <button class="btn bg-[#F85559] text-white border-none">Shop Now</button>
+                  </div>
+                </div>
+              </div>
+        </div>
+    </header>
+    <main>
+        <section class="container mx-auto md:px-16 px-8 mt-10">
+            <div class="flex md:justify-between flex-col md:flex-row">
+            <div class="space-y-3">
+            <h1 class="text-2xl font-extrabold text-black">Deal of the day</h1>
+            <p class="text-xs md:w-96 w-auto text-stone-500">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+            </div>
+
+            <div>
+              <div class="flex gap-5">
+               <div>
+               <div class="flex gap-3 items-center"> <h1 class="text-4xl">29</h1>
+                 <p class="text-xs">:</p>
+            </div>
+                <p class="text-xs">Days</p>
+               </div>
+               <div>
+               <div class="flex gap-3 items-center"> <h1 class="text-4xl">15</h1>
+                 <p class="text-xs">:</p>
+            </div>
+                <p class="text-xs">Days</p>
+               </div>
+               <div>
+               <div class="flex gap-3 items-center"> <h1 class="text-4xl">25</h1>
+                 <p class="text-xs">:</p>
+            </div>
+                <p class="text-xs">Days</p>
+               </div>
+               <div>
+               <div class="flex gap-3 items-center"> <h1 class="text-4xl">08</h1>
+                 <p class="text-xs">:</p>
+            </div>
+                <p class="text-xs">Days</p>
+               </div>
+            
+               </div>
+                
+              </div>
+            </div>
+        </section>
+        <!-- shop section -->
+    </main>
+    <footer>
+
+    </footer>
 </body>
 </html>
