@@ -47,9 +47,14 @@
                 </div> 
 
                 
-                 <div class="navbar-end flex justify-evenly border-2 rounded-r-2xl rounded-l-2xl w-0 h-0 md:w-96 md:h-10 bg-white text-gray-400">
-                   <p class="text-xs">search here</p>
-                   <i class="fa-solid fa-magnifying-glass"></i>
+                 <div class="navbar-end  text-gray-400  invisible md:visible">
+                  
+                    <input type="text" placeholder="search here" class=" px-7 py-2   max-w-lg rounded-r-full rounded-l-full text-xs" />
+
+                      <i class="fa-solid fa-magnifying-glass relative  -left-10"></i>
+                    
+                  
+                  
                  </div>
                 
             </div>
@@ -124,9 +129,45 @@
                         <i class="fa-solid fa-star text-red-300"></i>
                         <i class="fa-solid fa-star text-red-200"></i>
                       </div>
-                     <div class="list-none text-red-500">
-                        <li><a href="">Details</a></li>
-                     </div>
+                     
+                        
+
+              <button class=" border-none text-red-500" onclick="my_modal_5.showModal()">Details</button>
+              <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+                      <form method="dialog" class="modal-box max-w-sm mx-auto">
+                    <div class="card bg-base-100 container">
+                    <figure class="px-5 pt-5">
+                      <img src="images/fruit6.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h2 class="card-title">Apples</h2>
+                      <p class="text-xs text-gray-400">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                      <div>
+                        <i class="fa-solid fa-star text-red-600"></i>
+                        <i class="fa-solid fa-star text-red-500"></i>
+                        <i class="fa-solid fa-star text-red-400"></i>
+                        <i class="fa-solid fa-star text-red-300"></i>
+                        <i class="fa-solid fa-star text-red-200"></i>
+                      </div>
+                     
+                    </div>
+                    <div class="flex items-center justify-center gap-10 -mt-5">
+                      <div class="modal-action">
+                        <!-- if there is a button in form, it will close the modal -->
+                        <button class=" border-2 border-red-400 text-red-500 px-7 py-5 text-xs -mt-4">Close</button>
+                      </div>
+                      <div class="">
+                        <button class="btn bg-[#F85559] text-white">Shop All</button>
+                    </div>
+                  </div>
+                    </div>
+                   
+
+                </form>
+              </dialog>
+
+
+              
                     </div>
                   </div>
                 <div class="card  bg-base-100">
