@@ -23,9 +23,9 @@
 <body class="font_family"> 
     <header class="container mx-auto md:px-16 px-4">
         <nav class="mb-2">
-            <div class="navbar md:bg-[#F85559] p-4 rounded-r-full rounded-l-full my-10">
+            <div class="navbar lg:bg-[#F85559] p-4 rounded-r-full rounded-l-full my-10">
                 <div class="navbar-start">
-                    <div class="hidden md:block">
+                    <div class="hidden lg:block">
                     <div class="flex list-none gap-5 text-white text-sm ml-10">
                         <li>Home</li>
                         <li>About Us</li>
@@ -33,21 +33,27 @@
                         <li>All Fruits</li>
                     </div>
                 </div>
-                  <div class="dropdown  md:hidden absolute left-80">
+                  <div class="dropdown  lg:hidden absolute left-72 md:left-96">
                     <label tabindex="0" class="btn btn-ghost btn-circle">
                       <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
                     </label>
+                    <ul tabindex="0" class="menu menu-xm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100  max-w-xs text-xs space-y-3">
+                      <li>Home</li>
+                        <li>About Us</li>
+                        <li>Shop</li>
+                        <li>All Fruits</li>
+                    </ul>
                    
                   </div>
                 </div>
                 
-                <div class="  md:navbar-center flex justify-end relative right-0">
+                <div class="  lg:navbar-center flex justify-end relative right-0 md:navbar-center">
                     <img src="images/logo.png" alt="">
-                  <a class="btn btn-ghost normal-case text-xl md:text-white">Fruit Burst</a>
+                  <a class="btn btn-ghost normal-case text-xl lg:text-white">Fruit Burst</a>
                 </div> 
 
                 
-                 <div class="navbar-end  text-gray-400  invisible md:visible">
+                 <div class="navbar-end  text-gray-400  invisible  lg:visible ">
                   
                     <input type="text" placeholder="search here" class=" px-7 py-2   max-w-lg rounded-r-full rounded-l-full text-xs" />
 
@@ -141,8 +147,8 @@
          
 
         <!-- normal fruit section -->
-        <div class=" md:mx-24 relative bottom-16  bg-white shadow-md hidden md:block">
-        <div class="grid grid-cols-5 container mx-auto md:px-16 px-8 py-5 ">
+        <div class=" md:mx-24 relative bottom-16  bg-white shadow-md hidden md:hidden lg:block">
+        <div class="grid grid-cols-5 container mx-auto lg:px-16 px-8 py-5 ">
          
           <div class="card  ">
             <figure class="px-5 pt-5">
@@ -191,10 +197,10 @@
     <main>
       <!-- shop content -->
         <section class="container mx-auto md:px-16 px-8 mt-10">
-            <div class="flex justify-center text-center lg:justify-between md:justify-between flex-col gap-10  md:flex-row">
+            <div class="flex justify-center text-center lg:justify-between md:justify-between flex-col gap-10  lg:flex-row">
             <div class="space-y-3">
-            <h1 class="text-2xl font-extrabold text-black md:mr-52">Deal of the day</h1>
-            <p class="text-xs md:w-96 text-stone-500">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+            <h1 class="text-2xl font-extrabold text-black text-center md:text-center lg:text-left">Deal of the day</h1>
+            <p class="text-xs lg:w-96 text-stone-500 text-center md:text-center lg:text-left">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
             </div>
 
             <div>
@@ -231,7 +237,7 @@
         </section>
         <!-- shop section -->
         <section class="container mx-auto px-8 md:px-16 mt-10 mb-10">
-            <div class="grid md:grid-cols-4 grid-cols-1 gap-4">
+            <div class="grid lg:grid-cols-4 md:grid-cols-2  grid-cols-1 gap-4">
                 <div class="card bg-base-100 outline outline-gray-100">
                     <figure class="px-10 pt-10">
                       <img src="images/fruit6.png" alt="Shoes" class="rounded-xl" />
@@ -272,7 +278,7 @@
                     <div class="flex items-center justify-center gap-10 -mt-5">
                       <div class="modal-action">
                         <!-- if there is a button in form, it will close the modal -->
-                        <button class=" border-2 border-red-400 text-red-500 px-7 py-5 text-xs -mt-4">Close</button>
+                        <button class=" border-2 border-red-400 text-red-500 px-7 py-5 text-xs -mt-5">Close</button>
                       </div>
                       <div class="">
                         <button class="btn bg-[#F85559] text-white">Shop All</button>
@@ -325,7 +331,7 @@
             </div>
           
           </div>
-          <div class="flex items-center justify-center gap-10 -mt-5">
+          <div class="flex items-center justify-center gap-10 -mt-7">
             <div class="modal-action">
               <!-- if there is a button in form, it will close the modal -->
               <button class=" border-2 border-red-400 text-red-500 px-7 py-5 text-xs -mt-4">Close</button>
@@ -381,7 +387,7 @@
         </div>
       
       </div>
-      <div class="flex items-center justify-center gap-10 -mt-5">
+      <div class="flex items-center justify-center gap-10 -mt-6">
         <div class="modal-action">
           <!-- if there is a button in form, it will close the modal -->
           <button class=" border-2 border-red-400 text-red-500 px-7 py-5 text-xs -mt-4">Close</button>
@@ -437,7 +443,7 @@
         </div>
       
       </div>
-      <div class="flex items-center justify-center gap-10 -mt-5">
+      <div class="flex items-center justify-center gap-10 -mt-7">
         <div class="modal-action">
           <!-- if there is a button in form, it will close the modal -->
           <button class=" border-2 border-red-400 text-red-500 px-7 py-5 text-xs -mt-4">Close</button>
@@ -543,9 +549,9 @@
             </div>
             </div>
             <div class="mb-10 container mx-auto px-8 md:px-16">
-                 <div class="grid  grid-cols-1  md:grid-cols-3 gap-10 items-center"> 
+                 <div class="grid  grid-cols-1  lg:grid-cols-3 gap-10 items-center"> 
                  <div class="grid grid-cols-1 gap-5"> 
-                   <div class="flex md:flex-row flex-col gap-2">
+                   <div class="flex lg:flex-row flex-col gap-2 lg:text-left text-center">
                     <div class="text-center">
                       <i class="fa-solid fa-person bg-slate-300 rounded-full p-1"></i>
                     </div>
@@ -555,7 +561,7 @@
                       <p class="text-xs text-gray-500">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
                     </div>
                   </div>
-                  <div class="flex gap-2">
+                  <div class="flex  lg:flex-row flex-col gap-2 lg:text-left text-center">
                     <div class="text-center">
                       <i class="fa-solid fa-heart bg-slate-300 rounded-full p-1"></i>
                     </div>
@@ -565,7 +571,7 @@
                       <p class="text-xs text-gray-500">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
                     </div>
                   </div>
-                  <div class="flex gap-2">
+                  <div class="flex  lg:flex-row flex-col gap-2 lg:text-left text-center">
                     <div class="text-center">
                     
                       <i class="fa-solid fa-tree bg-slate-300 rounded-full p-1"></i>
@@ -582,31 +588,31 @@
               <img src="images/whychoose1.png" alt="">
              </div>
              <div class="grid grid-cols-1 gap-5"> 
-              <div class="flex gap-2 items-center text-right">
+              <div class="flex gap-2   lg:flex-row flex-col-reverse items-center  text-center  lg:text-right">
                
                <div>
                  <h3 class="font-extrabold text-black">Integrate<span style="border-bottom: solid 2px black;">d Supplier</span></h3>
                  
                  <p class="text-xs text-gray-500">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
                </div>
-               <div class="">
+               <div class="text-center">
                 
                 <i class="fa-solid fa-hand  bg-slate-300 rounded-full p-1"></i>
                
               </div>
              </div>
-             <div class="flex gap-2 items-center text-right">
+             <div class="flex gap-2   lg:flex-row flex-col-reverse items-center text-center  lg:text-right">
                
                <div>
                  <h3 class="font-extrabold text-black">Sustainable<span style="border-bottom: solid 2px black;"> Practice</span></h3>
                  
                  <p class="text-xs text-gray-500">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
                </div>
-               <div class="">
+               <div class="text-center">
                 <i class="fa-brands fa-pagelines bg-slate-300 rounded-full p-1"></i>
               </div>
              </div>
-             <div class="flex gap-2 text-right items-center">
+             <div class="flex gap-2  lg:flex-row flex-col-reverse  text-center  lg:text-right items-center">
                
                <div>
                  <h3 class="font-extrabold text-black">The Benef<span style="border-bottom: solid 2px black;">its Only</span></h3>
@@ -614,7 +620,7 @@
                  <p class="text-xs text-gray-500">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
 
                </div>
-               <div class="">
+               <div class="text-center">
                 
                 <i class="fa-solid fa-thumbs-up bg-slate-300 rounded-full p-1"></i>
               </div>
@@ -637,7 +643,7 @@
                     <p class="text-white">Fruit Burst</p>
                 </div>
             </div>
-            <div class="list-none text-white flex justify-center gap-5 text-xs font-bold mb-5">
+            <div class="list-none text-white flex  flex-wrap justify-center gap-10 text-xs font-bold mb-5">
                 <li>Home</li>
                 <li>About Us</li>
                 <li>Shop</li>
